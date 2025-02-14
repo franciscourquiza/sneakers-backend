@@ -1,0 +1,16 @@
+﻿# Ignorar archivos y carpetas de Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar node_modules (si usas Node.js en el proyecto)
+node_modules/
+
+# Ignorar archivos de entorno de producción de React (build)
+build/
+
+# Archivos de logs
+*.log

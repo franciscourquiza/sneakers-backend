@@ -29,6 +29,11 @@ namespace BeIceProyect.Server.Repositories
         }
         public async Task<List<Sneaker>> GetAll()
         {
+            var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).ToListAsync();
+            return sneakers;
+        }
+        public async Task<List<Sneaker>> GetAllNoDiscount()
+        {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
             return sneakers;
         }

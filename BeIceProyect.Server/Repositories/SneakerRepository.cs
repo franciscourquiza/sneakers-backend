@@ -19,12 +19,23 @@ namespace BeIceProyect.Server.Repositories
         }
         public async Task<List<Sneaker>> GetByName(string name)
         {
-            var sneakers = await _context.Sneakers.Where(s => EF.Functions.Like(s.Name, $"%{name}%")).Include(s => s.Sizes).ToListAsync();
+            var sneakers = await _context.Sneakers.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == false).Include(s => s.Sizes).ToListAsync();
+            return sneakers;
+        }
+        public async Task<List<Sneaker>> GetByNameInDiscount(string name)
+        {
+            var sneakers = await _context.Sneakers.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == true).Include(s => s.Sizes).ToListAsync();
             return sneakers;
         }
         public async Task<List<Sneaker>> GetAll()
         {
-            var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).ToListAsync();
+            var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
+            return sneakers;
+        }
+
+        public async Task<List<Sneaker>> GetAllInDiscount()
+        {
+            var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => s.IsInDiscount).ToListAsync();
             return sneakers;
         }
 
@@ -46,6 +57,7 @@ namespace BeIceProyect.Server.Repositories
                 Price = body.Price,
                 ImageUrl = body.ImageUrl,
                 Sizes = body.Sizes.Select(size => new SneakersSize { Size = size }).ToList(),
+                IsInDiscount = body.IsInDiscount,
             };
 
             await _context.Sneakers.AddAsync(sneaker);
@@ -72,6 +84,7 @@ namespace BeIceProyect.Server.Repositories
             existingSneaker.Name = updatedSneakerDto.Name;
             existingSneaker.Price = updatedSneakerDto.Price;
             existingSneaker.ImageUrl = updatedSneakerDto.ImageUrl;
+            existingSneaker.IsInDiscount = updatedSneakerDto.IsInDiscount;
 
             _context.SneakersSizes.RemoveRange(existingSneaker.Sizes);
 

@@ -34,10 +34,25 @@ namespace BeIceProyect.Server.Controllers
             }
             return Ok(sneakers);
         }
+        [HttpGet("GetByNameInDiscount")]
+        public async Task<IActionResult> GetByNameInDiscount([FromQuery] string name)
+        {
+            var sneakers = await _repository.GetByNameInDiscount(name);
+            if (sneakers == null)
+            {
+                return NotFound("No se encontraron zapatillas con ese nombre.");
+            }
+            return Ok(sneakers);
+        }
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _repository.GetAll());
+        }
+        [HttpGet("GetAllInDiscount")]
+        public async Task<IActionResult> GetAllInDiscount()
+        {
+            return Ok(await _repository.GetAllInDiscount());
         }
         [HttpGet("GetBySize")]
         public async Task<IActionResult> GetBySize([FromQuery] int size)

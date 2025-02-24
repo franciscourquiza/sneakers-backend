@@ -8,5 +8,6 @@ namespace BeIceProyect.Server.Dtos
         public float Price { get; set; }
         public string ImageUrl { get; set; }
         public List<int> Sizes { get; set; } = new();
+        public bool IsInDiscount { get; set; }
     }
 }

@@ -350,3 +350,4 @@ D:\Proyectos Programacion\sneakers-backend\BeIceProyect.Server\obj\Debug\net8.0\
 D:\Proyectos Programacion\sneakers-backend\BeIceProyect.Server\obj\Debug\net8.0\BeIceProyect.Server.pdb
 D:\Proyectos Programacion\sneakers-backend\BeIceProyect.Server\obj\Debug\net8.0\BeIceProyect.Server.genruntimeconfig.cache
 D:\Proyectos Programacion\sneakers-backend\BeIceProyect.Server\obj\Debug\net8.0\ref\BeIceProyect.Server.dll
+D:\Proyectos Programacion\sneakers-backend\BeIceProyect.Server\obj\Debug\net8.0\BeIceProyect.Server.sourcelink.json

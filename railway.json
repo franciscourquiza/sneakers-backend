@@ -1,0 +1,4 @@
+{
+  "buildCommand": "dotnet restore ./BeIceProyect.Server/BeIceProyect.Server.csproj && dotnet build ./BeIceProyect.Server/BeIceProyect.Server.csproj -c Release",
+  "startCommand": "dotnet ./BeIceProyect.Server/bin/Release/net9.0/BeIceProyect.Server.dll"
+}

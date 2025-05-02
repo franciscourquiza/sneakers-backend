@@ -2,17 +2,17 @@
 using BeIceProyect.Server;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace BeIceProyect.Server.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20250212213340_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250502162547_InitialJuanse")]
+    partial class InitialJuanse
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,28 +20,31 @@ namespace BeIceProyect.Server.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "9.0.2")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BeIceProyect.Server.Entities.Sneakers", b =>
+            modelBuilder.Entity("BeIceProyect.Server.Entities.Sneaker", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsInDiscount")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
@@ -52,15 +55,15 @@ namespace BeIceProyect.Server.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Size")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("SneakerId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -73,21 +76,21 @@ namespace BeIceProyect.Server.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("UserRole")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -96,7 +99,7 @@ namespace BeIceProyect.Server.Migrations
 
             modelBuilder.Entity("BeIceProyect.Server.Entities.SneakersSize", b =>
                 {
-                    b.HasOne("BeIceProyect.Server.Entities.Sneakers", "Sneaker")
+                    b.HasOne("BeIceProyect.Server.Entities.Sneaker", "Sneaker")
                         .WithMany("Sizes")
                         .HasForeignKey("SneakerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -105,7 +108,7 @@ namespace BeIceProyect.Server.Migrations
                     b.Navigation("Sneaker");
                 });
 
-            modelBuilder.Entity("BeIceProyect.Server.Entities.Sneakers", b =>
+            modelBuilder.Entity("BeIceProyect.Server.Entities.Sneaker", b =>
                 {
                     b.Navigation("Sizes");
                 });

@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BeIceProyect.Server.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialJuanse : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

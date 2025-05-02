@@ -18,7 +18,7 @@ builder.Services.AddScoped<SneakerRepository>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<Context>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddCors(options =>
 {

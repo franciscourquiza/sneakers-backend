@@ -49,7 +49,7 @@ namespace BeIceProyect.Server.Repositories
         {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
 
-            var clothes = await _context.Clothes.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
+            var clothes = await _context.Clothes.AsNoTracking().Where(s => !s.IsInDiscount).ToListAsync();
 
             var caps = await _context.Caps.AsNoTracking().Where(c => !c.IsInDiscount).ToListAsync();
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BeIceProyect.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba4dcb2ccbda574a23306855d2969575a2102fe9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17876131f8437fc7eca35362d3d045dafbf575f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BeIceProyect.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BeIceProyect.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BeIceProyect.Server.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20250518223534_InitialJuanse")]
-    partial class InitialJuanse
+    [Migration("20250518232207_NewMigration")]
+    partial class NewMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

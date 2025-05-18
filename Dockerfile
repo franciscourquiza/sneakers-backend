@@ -23,5 +23,5 @@ RUN dotnet publish ./BeIceProyect.Server/BeIceProyect.Server.csproj -c Release -
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "BeIceProyect.Server.dll"]
+ENTRYPOINT ["sh", "-c", "dotnet ef database update && dotnet BeIceProyect.Server.dll"]
 

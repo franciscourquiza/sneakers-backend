@@ -22,26 +22,62 @@ namespace BeIceProyect.Server.Repositories
             var sneakers = await _context.Sneakers.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == false).Include(s => s.Sizes).ToListAsync();
             return sneakers;
         }
-        public async Task<List<Sneaker>> GetByNameInDiscount(string name)
+        public async Task<ProductsWithDiscountDto> GetByNameInDiscount(string name)
         {
             var sneakers = await _context.Sneakers.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == true).Include(s => s.Sizes).ToListAsync();
-            return sneakers;
+            
+            var clothes = await _context.Clothes.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == true).ToListAsync();
+
+            var caps = await _context.Caps.Where(s => EF.Functions.Like(s.Name, $"%{name}%") && s.IsInDiscount == true).ToListAsync();
+
+            var result = new ProductsWithDiscountDto
+            {
+                Sneakers = sneakers,
+                Clothes = clothes,
+                Caps = caps
+            };
+
+            return result;
+
         }
         public async Task<List<Sneaker>> GetAll()
         {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).ToListAsync();
             return sneakers;
         }
-        public async Task<List<Sneaker>> GetAllNoDiscount()
+        public async Task<ProductsWithoutDiscountDto> GetAllNoDiscount()
         {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
-            return sneakers;
+
+            var clothes = await _context.Clothes.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
+
+            var caps = await _context.Caps.AsNoTracking().Where(c => !c.IsInDiscount).ToListAsync();
+
+            var result = new ProductsWithoutDiscountDto
+            {
+                Sneakers = sneakers,
+                Clothes = clothes,
+                Caps = caps
+            };
+            return result;
         }
 
-        public async Task<List<Sneaker>> GetAllInDiscount()
+        public async Task<ProductsWithDiscountDto> GetAllInDiscount()
         {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => s.IsInDiscount).ToListAsync();
-            return sneakers;
+
+            var clothes = await _context.Clothes.AsNoTracking().Include(s => s.Sizes).Where(s => s.IsInDiscount).ToListAsync();
+
+            var caps = await _context.Caps.AsNoTracking().Where(s => s.IsInDiscount).ToListAsync();
+
+            var result = new ProductsWithDiscountDto
+            {
+                Sneakers = sneakers,
+                Clothes = clothes,
+                Caps = caps
+            };
+
+            return result;
         }
 
         public async Task<List<Sneaker>> GetBySize(int size)

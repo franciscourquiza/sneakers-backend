@@ -37,17 +37,17 @@ namespace BeIceProyect.Server.Controllers
         [HttpGet("GetByNameInDiscount")]
         public async Task<IActionResult> GetByNameInDiscount([FromQuery] string name)
         {
-            var sneakers = await _repository.GetByNameInDiscount(name);
-            if (sneakers == null)
+            var products = await _repository.GetByNameInDiscount(name);
+            if (products == null)
             {
-                return NotFound("No se encontraron zapatillas con ese nombre.");
+                return NotFound("No se encontraron productos con ese nombre.");
             }
-            return Ok(sneakers);
+            return Ok(products);
         }
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _repository.GetAll());
+            return Ok(await _repository.GetAll());  
         }
         [HttpGet("GetAllInDiscount")]
         public async Task<IActionResult> GetAllInDiscount()

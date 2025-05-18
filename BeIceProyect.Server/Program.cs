@@ -14,6 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SneakerRepository>();
+builder.Services.AddScoped<CapRepository>();
+builder.Services.AddScoped<ClotheRepository>();
+
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

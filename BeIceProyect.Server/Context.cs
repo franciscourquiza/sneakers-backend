@@ -9,6 +9,8 @@ namespace BeIceProyect.Server
         public Context(DbContextOptions<Context> options) : base(options) { }
 
         public DbSet<Sneaker> Sneakers { get; set; }
+        public DbSet<Clothe> Clothes { get; set; }
+        public DbSet<Cap> Caps { get; set; }
         public DbSet<SneakersSize> SneakersSizes { get; set; }
         public DbSet<User> Users { get; set; }
 

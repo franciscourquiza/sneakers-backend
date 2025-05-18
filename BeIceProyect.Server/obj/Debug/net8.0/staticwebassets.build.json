@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "XLgRV2BUNr7aJWSAA/89DFnrMVr8GqCt1l3JxLGnXYU=",
+  "Hash": "qVAssG2m3SwVxcajMrOF8net2DYBqKIeNnK6VYWyTYs=",
   "Source": "BeIceProyect.Server",
   "BasePath": "_content/BeIceProyect.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

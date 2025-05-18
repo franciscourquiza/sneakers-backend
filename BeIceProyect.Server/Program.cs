@@ -54,11 +54,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<Context>();
-    db.Database.Migrate();  // Esto aplica las migraciones pendientes automáticamente
-}
+
 
 
 app.UseDefaultFiles();
@@ -76,6 +72,12 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.UseCors("AllowAll");
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<Context>();
+    db.Database.Migrate();  // Esto aplica las migraciones pendientes automáticamente
+}
 
 app.MapControllers();
 

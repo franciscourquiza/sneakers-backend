@@ -162,7 +162,7 @@
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Program.cs",
               "ToolTip": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Program.cs",
               "RelativeToolTip": "BeIceProyect.Server\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T02:44:14.094Z",
               "EditorCaption": ""
@@ -177,7 +177,8 @@
               "RelativeToolTip": "BeIceProyect.Server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T15:22:16.434Z"
+              "WhenOpened": "2025-04-10T15:22:16.434Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -406,7 +407,7 @@
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Controllers\\CapController.cs",
               "ToolTip": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Controllers\\CapController.cs",
               "RelativeToolTip": "BeIceProyect.Server\\Controllers\\CapController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwEAAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwEAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T21:01:13.938Z",
               "EditorCaption": ""

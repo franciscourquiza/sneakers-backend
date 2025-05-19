@@ -11,7 +11,7 @@ namespace BeIceProyect.Server.Entities
         public string Name { get; set; }
         public float Price { get; set; }
         public string ImageUrl { get; set; }
-        public string Sizes { get; set; }
+        public string Size { get; set; }
         public bool IsInDiscount { get; set; } = false;
         public string Category { get; set; }
     }

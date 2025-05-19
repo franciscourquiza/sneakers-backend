@@ -37,7 +37,7 @@ namespace BeIceProyect.Server.Repositories
                 Name = body.Name,
                 Price = body.Price,
                 ImageUrl = body.ImageUrl,
-                Sizes = body.Sizes,
+                Size = body.Size,
                 IsInDiscount = body.IsInDiscount,
                 Category = "clothe",
             };

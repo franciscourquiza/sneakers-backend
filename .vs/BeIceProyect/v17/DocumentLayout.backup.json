@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Proyectos Programacion\\sneakers-backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\repositories\\caprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\repositories\\caprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\repositories\\sneakerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\repositories\\sneakerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\controllers\\sneakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\controllers\\sneakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\repositories\\clotherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\repositories\\clotherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\controllers\\sneakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\controllers\\sneakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\controllers\\clothecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\migrations\\20250519003821_categoryadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\migrations\\20250519003821_categoryadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\repositories\\caprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|solutionrelative:beiceproyect.server\\repositories\\caprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24A8C2FD-3B8F-45D3-BCD2-BC4D7F2E8B6F}|BeIceProyect.Server\\BeIceProyect.Server.csproj|d:\\proyectos programacion\\sneakers-backend\\beiceproyect.server\\entities\\sneaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 198,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "20250519003821_CategoryAdded.cs",
               "DocumentMoniker": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Migrations\\20250519003821_CategoryAdded.cs",
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Migrations\\20250519003821_CategoryAdded.cs",
@@ -74,30 +74,30 @@
               "RelativeToolTip": "BeIceProyect.Server\\Migrations\\20250519003821_CategoryAdded.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T00:38:21.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T00:38:21.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "CapRepository.cs",
               "DocumentMoniker": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Repositories\\CapRepository.cs",
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Repositories\\CapRepository.cs",
               "ToolTip": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Repositories\\CapRepository.cs",
               "RelativeToolTip": "BeIceProyect.Server\\Repositories\\CapRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwCgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:02:23.556Z"
+              "WhenOpened": "2025-05-18T21:02:23.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SneakerRepository.cs",
               "DocumentMoniker": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Repositories\\SneakerRepository.cs",
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Repositories\\SneakerRepository.cs",
               "ToolTip": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Repositories\\SneakerRepository.cs",
               "RelativeToolTip": "BeIceProyect.Server\\Repositories\\SneakerRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwC0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCwAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T00:55:54.548Z",
               "EditorCaption": ""
@@ -110,7 +110,7 @@
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Repositories\\ClotheRepository.cs",
               "ToolTip": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Repositories\\ClotheRepository.cs",
               "RelativeToolTip": "BeIceProyect.Server\\Repositories\\ClotheRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowCkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T21:39:26.842Z",
               "EditorCaption": ""
@@ -131,8 +131,7 @@
               "RelativeToolTip": "BeIceProyect.Server\\Entities\\Sneaker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T00:33:51.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T00:33:51.362Z"
             },
             {
               "$type": "Document",
@@ -172,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClotheController.cs",
               "DocumentMoniker": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Controllers\\ClotheController.cs",
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Controllers\\ClotheController.cs",
@@ -180,12 +179,11 @@
               "RelativeToolTip": "BeIceProyect.Server\\Controllers\\ClotheController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T23:29:00.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T23:29:00.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SneakerController.cs",
               "DocumentMoniker": "D:\\Proyectos Programacion\\sneakers-backend\\BeIceProyect.Server\\Controllers\\SneakerController.cs",
               "RelativeDocumentMoniker": "BeIceProyect.Server\\Controllers\\SneakerController.cs",

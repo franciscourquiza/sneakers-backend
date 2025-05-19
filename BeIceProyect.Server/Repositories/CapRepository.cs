@@ -23,7 +23,7 @@ namespace BeIceProyect.Server.Repositories
         }
         public async Task<List<Cap>> GetAll()
         {
-            var caps = await _context.Caps.AsNoTracking().ToListAsync();
+            var caps = await _context.Caps.AsNoTracking().Where(s => !s.IsInDiscount).ToListAsync();
             return caps;
         }
         public async Task<Cap> Create(EditCapDto body)

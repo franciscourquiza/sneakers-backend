@@ -23,7 +23,7 @@ namespace BeIceProyect.Server.Repositories
         }
         public async Task<List<Clothe>> GetAll()
         {
-            var clothes = await _context.Clothes.AsNoTracking().ToListAsync();
+            var clothes = await _context.Clothes.AsNoTracking().Where(s => !s.IsInDiscount).ToListAsync();
             return clothes;
         }
         public async Task<Clothe> Create(EditClotheDto body)

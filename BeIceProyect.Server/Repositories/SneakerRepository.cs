@@ -99,6 +99,7 @@ namespace BeIceProyect.Server.Repositories
                 ImageUrl = body.ImageUrl,
                 Sizes = body.Sizes.Select(size => new SneakersSize { Size = size }).ToList(),
                 IsInDiscount = body.IsInDiscount,
+                Category = "sneaker",
             };
 
             await _context.Sneakers.AddAsync(sneaker);

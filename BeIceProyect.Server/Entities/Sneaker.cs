@@ -13,5 +13,6 @@ namespace BeIceProyect.Server.Entities
         public string ImageUrl { get; set; }
         public List<SneakersSize> Sizes { get; set; } = new();
         public bool IsInDiscount { get; set; } = false;
+        public string Category { get; set; }
     }
 }

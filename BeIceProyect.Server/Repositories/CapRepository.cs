@@ -38,6 +38,7 @@ namespace BeIceProyect.Server.Repositories
                 Price = body.Price,
                 ImageUrl = body.ImageUrl,
                 IsInDiscount = body.IsInDiscount,
+                Category = "cap",
             };
 
             await _context.Caps.AddAsync(cap);

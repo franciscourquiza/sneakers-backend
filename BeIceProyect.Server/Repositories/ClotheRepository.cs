@@ -39,6 +39,7 @@ namespace BeIceProyect.Server.Repositories
                 ImageUrl = body.ImageUrl,
                 Sizes = body.Sizes,
                 IsInDiscount = body.IsInDiscount,
+                Category = "clothe",
             };
 
             await _context.Clothes.AddAsync(clothe);

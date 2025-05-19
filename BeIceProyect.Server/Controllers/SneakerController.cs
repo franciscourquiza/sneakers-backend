@@ -54,10 +54,10 @@ namespace BeIceProyect.Server.Controllers
         {
             return Ok(await _repository.GetAllInDiscount());
         }
-        [HttpGet("GetAllNoDiscount")]
-        public async Task<IActionResult> GetAllNoDiscount()
+        [HttpGet("GetAllTheProducts")]
+        public async Task<IActionResult> GetAllTheProducts()
         {
-            return Ok(await _repository.GetAllNoDiscount());
+            return Ok(await _repository.GetAllTheProducts());
         }
         [HttpGet("GetBySize")]
         public async Task<IActionResult> GetBySize([FromQuery] int size)

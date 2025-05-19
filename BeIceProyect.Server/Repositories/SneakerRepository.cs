@@ -45,13 +45,13 @@ namespace BeIceProyect.Server.Repositories
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
             return sneakers;
         }
-        public async Task<ProductsWithoutDiscountDto> GetAllNoDiscount()
+        public async Task<ProductsWithoutDiscountDto> GetAllTheProducts()
         {
             var sneakers = await _context.Sneakers.AsNoTracking().Include(s => s.Sizes).Where(s => !s.IsInDiscount).ToListAsync();
 
-            var clothes = await _context.Clothes.AsNoTracking().Where(s => !s.IsInDiscount).ToListAsync();
+            var clothes = await _context.Clothes.AsNoTracking().ToListAsync();
 
-            var caps = await _context.Caps.AsNoTracking().Where(c => !c.IsInDiscount).ToListAsync();
+            var caps = await _context.Caps.AsNoTracking().ToListAsync();
 
             var result = new ProductsWithoutDiscountDto
             {

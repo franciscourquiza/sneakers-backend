@@ -64,6 +64,7 @@ namespace BeIceProyect.Server.Repositories
             existingClothe.Name = updatedClotheDto.Name;
             existingClothe.Price = updatedClotheDto.Price;
             existingClothe.ImageUrl = updatedClotheDto.ImageUrl;
+            existingClothe.Size = updatedClotheDto.Size;
             existingClothe.IsInDiscount = updatedClotheDto.IsInDiscount;
 
             await _context.SaveChangesAsync();
